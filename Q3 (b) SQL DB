@@ -1,0 +1,8 @@
+Q3 (B) 
+
+SELECT DISTINCT COLUMN_NAME, TABLE_NAME
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_SCHEMA = 'rfam'
+AND COLUMN_NAME IN (
+    'accession', 'ncbitaxon', 'family_type', 'alignment', 'pubmed', 'go_id'
+);
