@@ -1,0 +1,4 @@
+
+
+
+curl -s https://www.amfiindia.com/spages/NAVAll.txt | awk -F ';' '{print $4 "," $11}' > nav.csv
